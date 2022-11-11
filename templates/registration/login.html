@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block %}
+<h1 align="center">Welcome to main page ..</h1>
+
+<div align="center" >
+
+    <form method="post">
+        {{form.as_p}}
+        <button type="submit" name="button">Submit</button>
+         {% csrf_token %}
+    </form>
+
+</div>
+{% endblock %}
+
+
+
+
